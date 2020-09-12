@@ -1,19 +1,19 @@
 # Web Developer Resume | Curriculum vitae
 
-# Vagiz Musin :frowning_man:
+# Vagiz Musin
 
-## :dvd: Contact Info
+## Contact Info
 
 | social media :speech_balloon: | link :link:                        |
 | ----------------------------- | ---------------------------------- |
 | **telegram**                  | [t.me](https://t.me/dVagiz)        |
 | **WhatsApp**                  | [wa.me](https://wa.me/77715264644) |
 
-## :cd: Summary
+## Summary
 
 In five years, I’d like to be a true proffessional web developer with successful end-to-end project management experience.
 
-## :dvd: Skills
+## Skills
 
 - HTML5
 - CSS3
@@ -26,7 +26,7 @@ In five years, I’d like to be a true proffessional web developer with successf
 - Adaptive / Mobile First
 - VS Code, Sublime Text 3, Figma, Photoshop (Basic), Avocode
 
-## :cd: Code examples
+## Code examples
 
 ```
 <div class="tours">
@@ -50,12 +50,12 @@ In five years, I’d like to be a true proffessional web developer with successf
 </div>
 ```
 
-## :dvd: Experience
+## Experience
 
 - Systems Administrator :technologist:
 - Computer Science Teacher :man_teacher:
 
-## :cd: Education
+## Education
 
 - Traversy Media Youtube chanel
 - freecodecamp.org Responsive Web Design
@@ -64,6 +64,6 @@ In five years, I’d like to be a true proffessional web developer with successf
   - ![Book1](https://i.ibb.co/RgBkM8Q/JSSSSS3-copy.jpg)
 - Bachelor of Computer Science
 
-## :dvd: English
+## English
 
 > _Pre-Intermediate A2_
