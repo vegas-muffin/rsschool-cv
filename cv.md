@@ -61,9 +61,7 @@ In five years, I’d like to be a true proffessional web developer with successf
 - freecodecamp.org Responsive Web Design
 - Books:
   - ![Book1](https://i.ibb.co/Wsp3phg/csssss3.jpg)
-    _Девид Макфарланд - Новая большая книга CSS (Бестселлеры O'Reilly)_
   - ![Book1](https://i.ibb.co/RgBkM8Q/JSSSSS3-copy.jpg)
-    _Девид Макфарланд - JavaScript и jQuerry (Бестселлеры O'Reilly)_
 - Bachelor of Computer Science
 
 ## :dvd: English
