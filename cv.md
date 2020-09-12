@@ -13,7 +13,7 @@
 
 In five years, I’d like to be a true proffessional web developer with successful end-to-end project management experience.
 
-# :dvd: Skills
+## :dvd: Skills
 
 - HTML5
 - CSS3
@@ -26,7 +26,7 @@ In five years, I’d like to be a true proffessional web developer with successf
 - Adaptive / Mobile First
 - VS Code, Sublime Text 3, Figma, Photoshop (Basic), Avocode
 
-# :cd: Code examples
+## :cd: Code examples
 
 ```
 <div class="tours">
@@ -50,12 +50,12 @@ In five years, I’d like to be a true proffessional web developer with successf
 </div>
 ```
 
-# :dvd: Experience
+## :dvd: Experience
 
 - Systems Administrator :technologist:
 - Computer Science Teacher :man_teacher:
 
-# :cd: Education
+## :cd: Education
 
 - Traversy Media Youtube chanel
 - freecodecamp.org Responsive Web Design
@@ -66,6 +66,6 @@ In five years, I’d like to be a true proffessional web developer with successf
     _Девид Макфарланд - JavaScript и jQuerry (Бестселлеры O'Reilly)_
 - Bachelor of Computer Science
 
-# :dvd: English
+## :dvd: English
 
 > _Pre-Intermediate A2_
