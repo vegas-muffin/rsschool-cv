@@ -1,0 +1,554 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <title>Curriculum vitae</title>
+    <style>
+      /* root style */
+      * {
+        -webkit-box-sizing: border-box;
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+      html,
+      body {
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        line-height: 1.7em;
+      }
+      .container {
+        margin: 0 auto;
+        max-width: 1024px;
+      }
+      .fa-color {
+        color: #10c9c3;
+      }
+      .header {
+        background-color: #333;
+      }
+      .header__navbar {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+        flex-direction: row;
+        -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+        justify-content: space-between;
+      }
+      .header__logo {
+        color: #f7c08a;
+        text-transform: uppercase;
+        font-size: 20px;
+        font-weight: bold;
+        padding: 15px;
+      }
+      .header__links ul {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+        flex-direction: row;
+        height: 100%;
+      }
+      .header__links li {
+        list-style: none;
+        background-color: #333;
+      }
+      .header__links li a {
+        text-decoration: none;
+        display: block;
+        color: #fff;
+        padding: 1rem;
+      }
+      .header__links li a:hover {
+        color: #10c9c3;
+        background-color: #444;
+      }
+      /* main */
+      /* Contact */
+      .main {
+        margin: 20px;
+      }
+      .main__avatar {
+        height: 420px;
+        float: left;
+        padding: 30px;
+      }
+      .main__title {
+        padding: 20px 0;
+      }
+      .contact__table,
+      th,
+      td {
+        border-collapse: collapse;
+        border: 1px solid #fff;
+        vertical-align: center;
+      }
+      .contact__table th {
+        background-color: #444;
+        color: #fff;
+      }
+      .contact__table_font {
+        font-weight: 500;
+      }
+      .contact__table th,
+      td {
+        padding: 10px 20px;
+      }
+      .contact__table tr {
+        background-color: #666;
+        color: #fff;
+      }
+      .contact__table td a {
+        text-decoration: none;
+      }
+      .fa-telegram-plane {
+        color: #80c9ed;
+      }
+      .contact__table_color-t {
+        color: #80c9ed;
+      }
+      .contact__table_color-t:hover {
+        text-decoration-line: underline;
+      }
+      .fa-whatsapp {
+        color: #58eca7;
+      }
+      .contact__table_color-wa {
+        color: #58eca7;
+      }
+      .contact__table_color-wa:hover {
+        text-decoration-line: underline;
+      }
+      .fa-at {
+        color: #f69902;
+      }
+      .contact__table_color-m {
+        color: #f69902;
+      }
+      .contact__table_color-m:hover {
+        text-decoration-line: underline;
+      }
+      .fa-skype {
+        color: #00aff0;
+      }
+      .contact__table_color-s {
+        color: #00aff0;
+      }
+      .contact__table_color-s:hover {
+        text-decoration-line: underline;
+      }
+      /* Summary */
+      /* Skills */
+      .skills__style {
+        background-color: #eee;
+        color: #555;
+        margin: 0;
+        padding: 0;
+        text-align: left;
+      }
+      .skills__style li {
+        padding: 10px;
+        border-bottom: 1px solid #fff;
+        list-style-type: none;
+        text-align: left;
+      }
+      .skills__style li:nth-child(odd) {
+        background-color: #444;
+        color: #fff;
+      }
+      /* Code Examples */
+      .code__example {
+        font-family: "Consolas", "Monaco";
+        background-color: #eee;
+        padding: 54px;
+        font-size: 1.2em;
+        border-left: #555 7px solid;
+      }
+      /* Experience */
+      .experience__style {
+        background-color: #f7c08a;
+        color: #555;
+        margin: 0;
+        padding: 0;
+        text-align: left;
+      }
+      .experience__style li {
+        padding: 10px;
+        border-bottom: 1px solid #eee;
+        list-style-type: none;
+        text-align: left;
+      }
+      /* Education */
+      .education__style {
+        background-color: #eee;
+        color: #555;
+        margin: 0;
+        padding: 0;
+        text-align: left;
+      }
+      .education__style li {
+        padding: 10px;
+        border-bottom: 1px solid #fff;
+        list-style-type: none;
+        text-align: left;
+      }
+      /* English */
+      .english p {
+        font-style: italic;
+        padding-left: 10px;
+      }
+      /* Footer */
+      .footer {
+        background: #444;
+        color: #fff;
+        padding: 20px;
+      }
+      .footer__inner {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+        flex-direction: row;
+        -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+        justify-content: space-between;
+      }
+      .up a {
+        text-decoration: none;
+        color: #f7c08a;
+        font-weight: bold;
+      }
+      /* Media Query */
+      @media (min-width: 746px) and (max-width: 950px) {
+        .header__navbar {
+          display: -webkit-box;
+          display: -ms-flexbox;
+          display: flex;
+          -webkit-box-orient: vertical;
+          -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+          flex-direction: column;
+          -webkit-box-pack: center;
+          -ms-flex-pack: center;
+          justify-content: center;
+          -webkit-box-align: center;
+          -ms-flex-align: center;
+          align-items: center;
+        }
+        .header__logo {
+          padding: 10px;
+        }
+      }
+      @media (max-width: 744px) {
+        .header__logo {
+          display: -webkit-box;
+          display: -ms-flexbox;
+          display: flex;
+        }
+        .header__navbar {
+          display: -webkit-box;
+          display: -ms-flexbox;
+          display: flex;
+          -webkit-box-orient: vertical;
+          -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+          flex-direction: column;
+          -webkit-box-align: center;
+          -ms-flex-align: center;
+          align-items: center;
+          -webkit-box-pack: center;
+          -ms-flex-pack: center;
+          justify-content: center;
+          width: 100%;
+        }
+        .header__links {
+          display: -webkit-box;
+          display: -ms-flexbox;
+          display: flex;
+          width: 100%;
+        }
+        .header__links ul {
+          display: -webkit-box;
+          display: -ms-flexbox;
+          display: flex;
+          -webkit-box-orient: vertical;
+          -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+          flex-direction: column;
+          width: 100%;
+        }
+        .header__links li a {
+          text-align: center;
+        }
+      }
+      @media (max-width: 664px) {
+        .main__avatar {
+          float: none;
+        }
+      }
+      @media (max-width: 605px) {
+        .main__avatar {
+          height: 300px;
+        }
+      }
+      @media (max-width: 500px) {
+        .code__example {
+          padding: 5px;
+          font-size: 85%;
+        }
+      }
+    </style>
+    <script
+      src="https://kit.fontawesome.com/a2fa360e5c.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <!-- Curriculum vitae -->
+    <header id="up" class="header">
+      <div class="container">
+        <nav class="header__navbar">
+          <div class="header__logo">Curriculum vitae</div>
+          <div class="header__links">
+            <ul>
+              <li class="header__item">
+                <a class="header__link" href="#contact">Contact Info</a>
+              </li>
+              <li class="header__item">
+                <a class="header__link" href="#summary">Summary</a>
+              </li>
+              <li class="header__item">
+                <a class="header__link" href="#skills">Skills</a>
+              </li>
+              <li class="header__item">
+                <a class="header__link" href="#code">Code examples</a>
+              </li>
+              <li class="header__item">
+                <a class="header__link" href="#experience">Experience</a>
+              </li>
+              <li class="header__item">
+                <a class="header__link" href="#education">Education</a>
+              </li>
+              <li class="header__item">
+                <a class="header__link" href="#english">English</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <main class="main">
+      <div class="container">
+        <!-- Contact Info -->
+        <div id="contact" class="contact">
+          <img
+            class="main__avatar"
+            src="https://i.ibb.co/VgDQLrr/avatar.jpg"
+            alt="avatar"
+          />
+          <h1 class="main__title-resume">Web Developer Resume</h1>
+          <h2 class="main__title">Vagiz Mussin</h2>
+          <h2 class="main__title">
+            <i class="fas fa-id-card-alt fa-color"></i> Contact Info
+          </h2>
+          <table class="contact__table">
+            <tr>
+              <th>social media</th>
+              <th>link</th>
+            </tr>
+            <tr>
+              <td class="contact__table_font">
+                <i class="fab fa-telegram-plane"></i> <span> telegram</span>
+              </td>
+              <td>
+                <a class="contact__table_color-t" href="https://t.me/dVagiz"
+                  >t.me</a
+                >
+              </td>
+            </tr>
+            <tr>
+              <td class="contact__table_font">
+                <i class="fab fa-whatsapp"></i> WhatsApp
+              </td>
+              <td>
+                <a
+                  class="contact__table_color-wa"
+                  href="https://wa.me/77715264644"
+                  >wa.me</a
+                >
+              </td>
+            </tr>
+            <tr>
+              <td class="contact__table_font">
+                <i class="fas fa-at"></i> E-mail
+              </td>
+              <td>
+                <a
+                  class="contact__table_color-m"
+                  href="mailto:vagiz_mus@mail.ru"
+                  >vagiz_mus@mail.ru</a
+                >
+              </td>
+            </tr>
+            <tr>
+              <td class="contact__table_font">
+                <i class="fab fa-skype"></i> Skype
+              </td>
+              <td>
+                <a class="contact__table_color-s" href="tel:vaga_mussa"
+                  >vaga_mussa</a
+                >
+              </td>
+            </tr>
+          </table>
+        </div>
+        <!-- Summary -->
+        <div id="summary" class="summary">
+          <h2 class="main__title">
+            <i class="fas fa-signal fa-color"></i> Summary
+          </h2>
+          <p>
+            In five years, I’d like to be a true proffessional web developer
+            with successful end-to-end project management experience.
+          </p>
+        </div>
+        <!-- Skills -->
+        <div class="skills" id="skills">
+          <h2 class="main__title">
+            <i class="fas fa-brain fa-color"></i> Skills
+          </h2>
+          <ul class="skills__style">
+            <li>HTML5</li>
+            <li>CSS3</li>
+            <li>SCSS/SASS</li>
+            <li>JavaScript <em>(Basic)</em></li>
+            <li>pascal</li>
+            <li>OOP Delphi</li>
+            <li>Bootstrap</li>
+            <li>BEM</li>
+            <li>Adaptive / Mobile First</li>
+            <li>
+              VS Code, Sublime Text 3, Figma, Photoshop (Basic), CorelDraw
+              (Basic) Avocode
+            </li>
+            <li>Touch typing</li>
+          </ul>
+        </div>
+        <!-- Code Examples -->
+        <div id="code" class="code">
+          <h2 class="main__title">
+            <i class="fas fa-file-code fa-color"></i> Code Examples
+          </h2>
+          <div class="code__example">
+            <code>
+              &lt;div class="tours"&gt;<br />
+              &nbsp;&nbsp;&nbsp;&nbsp;&lt;div class="tours-items"&gt;<br />
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;div
+              class="tours-item"&gt;<br />
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;h1&gt;Grand
+              Canyon All-American Helicopter Tour&lt;/h1&gt;<br />
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;h1&gt;&lt;p&gt;from
+              $396&lt;/p&gt;<br />
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;h1&gt;&lt;button&gt;&lt;i
+              class="fas fa-check"&gt;&lt;/i&gt; Free
+              Cancellation&lt;/button&gt;<br />
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;<br />
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;div
+              class="tours-item"&gt;<br />
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;h1&gt;Skip
+              the Line: NYC One World Observatory Ticket&lt;/h1&gt;<br />
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;p&gt;from
+              $40&lt;/p&gt;<br />
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;button&gt;&lt;i
+              class="far fa-clock"&gt;&lt;/i&gt; 3 hours&lt;/button&gt;<br />
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;<br />
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;div
+              class="tours-item"&gt;<br />
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;h1&gt;&lt;h1&gt;Harry
+              Potter Tour of Warner Bros. Studio in London&lt;/h1&gt;<br />
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;h1&gt;&lt;p&gt;from
+              $199&lt;/p&gt;<br />
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;h1&gt;&lt;button&gt;&lt;i
+              class="fas fa-check"&gt;&lt;/i&gt; Free
+              Cancellation&lt;/button&gt;<br />
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;<br />
+              &nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;<br />
+              &lt;/div&gt;
+            </code>
+          </div>
+        </div>
+        <!-- Experience -->
+        <div id="experience" class="experience">
+          <h2 class="main__title">
+            <i class="fas fa-briefcase fa-color"></i> Experience
+          </h2>
+          <ul class="experience__style">
+            <li>Systems Administrator</li>
+            <li>Computer Science Teacher</li>
+          </ul>
+        </div>
+        <!-- Education -->
+        <div id="education" class="education">
+          <h2 class="main__title">
+            <i class="fas fa-graduation-cap fa-color"></i> Education
+          </h2>
+          <ul class="education__style">
+            <li>
+              <i class="fas fa-link"></i> Responsive Web Design freecodecamp.org
+            </li>
+            <li>
+              <i class="fas fa-book"></i> Books:
+              <ul>
+                <li>
+                  <img
+                    src="https://i.ibb.co/Wsp3phg/csssss3.jpg"
+                    alt="book_css"
+                  />
+                </li>
+                <li>
+                  <img
+                    src="https://i.ibb.co/RgBkM8Q/JSSSSS3-copy.jpg"
+                    alt="book_javascript"
+                  />
+                </li>
+              </ul>
+            </li>
+            <li>
+              <i class="fab fa-youtube"></i> Traversy Media Youtube chanel
+            </li>
+            <li>
+              <i class="fas fa-user-graduate"></i> Bachelor of Computer Science
+            </li>
+          </ul>
+        </div>
+        <!-- English -->
+        <div id="english" class="english">
+          <h2 class="main__title">
+            <i class="fas fa-globe fa-color"></i> English
+          </h2>
+          <p>Pre-Intermediate A2</p>
+        </div>
+      </div>
+    </main>
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__inner">
+          <span class="up"
+            ><a href="#up"><i class="fas fa-angle-up"></i> Up</a></span
+          >
+          <span class="copyright">&copy 2020 Vagiz Mussin</span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
